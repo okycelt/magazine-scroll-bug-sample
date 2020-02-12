@@ -3,27 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1C1B3A6623F3E9A400ACB414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B3A6523F3E9A400ACB414 /* AppDelegate.swift */; };
-		1C1B3A6823F3E9A400ACB414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B3A6723F3E9A400ACB414 /* SceneDelegate.swift */; };
 		1C1B3A6A23F3E9A400ACB414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B3A6923F3E9A400ACB414 /* ViewController.swift */; };
-		1C1B3A6D23F3E9A400ACB414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B3A6B23F3E9A400ACB414 /* Main.storyboard */; };
 		1C1B3A6F23F3E9AB00ACB414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B3A6E23F3E9AB00ACB414 /* Assets.xcassets */; };
 		1C1B3A7223F3E9AB00ACB414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1B3A7023F3E9AB00ACB414 /* LaunchScreen.storyboard */; };
+		1C1B3A7B23F3EA3500ACB414 /* MagazineLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 1C1B3A7A23F3EA3500ACB414 /* MagazineLayout */; };
+		1C1B3A7D23F3EB6000ACB414 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1B3A7C23F3EB6000ACB414 /* TestCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C1B3A6223F3E9A400ACB414 /* MagazineScrollBugSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagazineScrollBugSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1B3A6523F3E9A400ACB414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C1B3A6723F3E9A400ACB414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C1B3A6923F3E9A400ACB414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1C1B3A6C23F3E9A400ACB414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C1B3A6E23F3E9AB00ACB414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C1B3A7123F3E9AB00ACB414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C1B3A7323F3E9AB00ACB414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C1B3A7C23F3EB6000ACB414 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1B3A7B23F3EA3500ACB414 /* MagazineLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				1C1B3A6523F3E9A400ACB414 /* AppDelegate.swift */,
-				1C1B3A6723F3E9A400ACB414 /* SceneDelegate.swift */,
 				1C1B3A6923F3E9A400ACB414 /* ViewController.swift */,
-				1C1B3A6B23F3E9A400ACB414 /* Main.storyboard */,
+				1C1B3A7C23F3EB6000ACB414 /* TestCell.swift */,
 				1C1B3A6E23F3E9AB00ACB414 /* Assets.xcassets */,
 				1C1B3A7023F3E9AB00ACB414 /* LaunchScreen.storyboard */,
 				1C1B3A7323F3E9AB00ACB414 /* Info.plist */,
@@ -83,6 +82,9 @@
 			dependencies = (
 			);
 			name = MagazineScrollBugSample;
+			packageProductDependencies = (
+				1C1B3A7A23F3EA3500ACB414 /* MagazineLayout */,
+			);
 			productName = MagazineScrollBugSample;
 			productReference = 1C1B3A6223F3E9A400ACB414 /* MagazineScrollBugSample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 1C1B3A5923F3E9A400ACB414;
+			packageReferences = (
+				1C1B3A7923F3EA3500ACB414 /* XCRemoteSwiftPackageReference "MagazineLayout" */,
+			);
 			productRefGroup = 1C1B3A6323F3E9A400ACB414 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +132,6 @@
 			files = (
 				1C1B3A7223F3E9AB00ACB414 /* LaunchScreen.storyboard in Resources */,
 				1C1B3A6F23F3E9AB00ACB414 /* Assets.xcassets in Resources */,
-				1C1B3A6D23F3E9A400ACB414 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +143,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C1B3A6A23F3E9A400ACB414 /* ViewController.swift in Sources */,
+				1C1B3A7D23F3EB6000ACB414 /* TestCell.swift in Sources */,
 				1C1B3A6623F3E9A400ACB414 /* AppDelegate.swift in Sources */,
-				1C1B3A6823F3E9A400ACB414 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1C1B3A6B23F3E9A400ACB414 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C1B3A6C23F3E9A400ACB414 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C1B3A7023F3E9AB00ACB414 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,6 +334,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C1B3A7923F3EA3500ACB414 /* XCRemoteSwiftPackageReference "MagazineLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/MagazineLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C1B3A7A23F3EA3500ACB414 /* MagazineLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C1B3A7923F3EA3500ACB414 /* XCRemoteSwiftPackageReference "MagazineLayout" */;
+			productName = MagazineLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C1B3A5A23F3E9A400ACB414 /* Project object */;
 }
